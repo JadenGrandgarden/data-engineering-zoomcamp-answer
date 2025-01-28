@@ -20,9 +20,6 @@ In this exercise, you will learn to set up and utilize Docker and Terraform for 
         SUM(CASE WHEN trip_distance > 10 THEN 1 ELSE 0 END) AS over_10_miles
     FROM 
         green_taxi_trips
-    WHERE 
-        lpep_pickup_datetime >= '2019-10-01'
-        AND lpep_pickup_datetime < '2019-11-01';
     ```
 4. **Longest trip for each day**: 
     Refer to the following SQL code to find the longest trip for each day based on the pickup time:

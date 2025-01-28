@@ -6,6 +6,3 @@ SELECT
     SUM(CASE WHEN trip_distance > 10 THEN 1 ELSE 0 END) AS over_10_miles
 FROM 
     green_taxi_trips
-WHERE 
-    lpep_pickup_datetime >= '2019-10-01'
-    AND lpep_pickup_datetime < '2019-11-01';
