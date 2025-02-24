@@ -2,7 +2,7 @@ version: 2
 sources:
   - name: staging
     database: terraform-demo-448714
-    schema: nytaxi
+    schema: dbt_jgrandgarden
 
     tables:
       - name: green_tripdata
@@ -57,7 +57,7 @@ models:
         description: ""
 
       - name: store_and_fwd_flag
-        data_type: string
+        data_type: boolean
         description: ""
 
       - name: passenger_count
@@ -149,7 +149,7 @@ models:
         description: ""
 
       - name: store_and_fwd_flag
-        data_type: string
+        data_type: boolean
         description: ""
 
       - name: passenger_count

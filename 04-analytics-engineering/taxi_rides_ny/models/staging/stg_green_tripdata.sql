@@ -45,6 +45,7 @@ where rn = 1
 
 
 -- dbt build --select <model_name> --vars '{'is_test_run': 'false'}'
+-- stg_green_tripdata
 {% if var('is_test_run', default=true) %}
 
   limit 100
